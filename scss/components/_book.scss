@@ -1,0 +1,65 @@
+.book {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .book__cover {
+    max-height: 60vh;
+    max-width: 400px;
+  }
+
+  .book__data {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    max-width: 340px;
+  }
+
+  .book__title,
+  .book__author {
+    margin-bottom: .25em;
+  }
+
+  .book__title {
+    font-size: $t1-font-size;
+    line-height: 1.2;
+  }
+
+  .book__author {
+    font-size: $t2-font-size;
+    font-weight: $base-font-weight;
+  }
+
+  .book__meta {
+    font-size: $s1-font-size;
+    opacity: .5;
+  }
+}
+
+// SMALL SCREENS
+
+@media only screen and (max-width: 900px) {
+  .book {
+    flex-direction: row;
+    padding: 8em 1em 3.5em 2em;
+
+    .book__cover {
+      max-height: unset;
+      max-width: 120px;
+    }
+
+    .book__data {
+      max-width: unset;
+    }
+
+    .book__title {
+      font-size: $t2-font-size;
+    }
+
+    .book__author {
+      font-size: $base-font-size;
+    }
+  }
+}

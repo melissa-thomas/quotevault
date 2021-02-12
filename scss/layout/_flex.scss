@@ -1,0 +1,26 @@
+// flex-direction
+.flex {
+  display: flex;
+
+  &.flex--column {
+    flex-direction: column;
+  }
+}
+
+// align items
+.flex {
+  &.flex--ai-center {
+    align-items: center;
+  }
+}
+
+// justify-content
+.flex {
+  &.flex--j-center {
+    justify-content: center;
+  }
+
+  &.flex--j-space-between {
+    justify-content: space-between;
+  }
+}

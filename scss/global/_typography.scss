@@ -1,0 +1,25 @@
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+}
+
+.h2, .h3 {
+  text-transform: uppercase;
+}
+
+.h2 {
+  font-size: $t1-font-size;
+  font-weight: $black-font-weight;
+  padding: 1em .25em .25em .25em;
+}
+
+.h3 {
+  color: $mid-neutral;
+  font-size: $s1-font-size;
+}
+
+.link {
+  border-bottom: 1px solid $dark-neutral;
+  color: $dark-neutral;
+  font-weight: $bold-font-weight;
+}

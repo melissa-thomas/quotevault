@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/books.png" sizes="16x16">
+  <script src="https://kit.fontawesome.com/fe5fe323b2.js" crossorigin="anonymous"></script>
+  <title>Quote Vault</title>
+</head>
+<body>
+  <div class="spread flex">
+    <!-- left half -->
+    <div class="spread__half spread__half--static flex flex--column flex--j-center flex--ai-center has-dark-background">
+    <!-- `quote box` logo -->
+      <a href="/index.html" class="logo">
+        <img alt="quote vault logo" src="img/quotevault.png" class="logo__img logo__img--desktop">
+        <img alt="quote vault logo" src="/img/quotevault-horiz.png" class="logo__img logo__img--mobile">
+      </a>
+    </div>
+    <!-- right half -->
+    <main class="spread__half spread__half--scroll flex flex--column has-light-background">
+      <h2 class="h2 has-solid-border">Index</h2>
+      <nav class="nav">
+        <!-- PREFACE -->
+        <form class="preface has-dashed-border">
+          <label class="preface__label flex flex--column">
+            <input class="preface__checkbox" type="checkbox" name="" value=""/>
+            <div class="preface__heading flex flex--j-space-between">
+              <span class="is-bold">Preface</span>
+              <div class="preface__arrow">
+                <i class="preface__icon preface__icon--down fas fa-arrow-down"></i>
+                <i class="preface__icon preface__icon--up fas fa-arrow-up"></i>
+              </div>
+            </div>
+            <p class="preface__content">Hi, I’m <a class="link" href="https://melissathomas.fyi/">Melissa</a>, and I built this site to catalogue beautiful quotes and passages from my favorite books. (This isn't an exhaustive list of all the books I'm reading, though. Feel free to follow me on <a class="link" href="https://www.goodreads.com/user/show/73995085-mel">Goodreads</a> for that.)</p>
+          </label>
+        </form>
+        <!-- PREFACE -->
+        <form class="preface has-dashed-border">
+          <label class="preface__label flex flex--column">
+            <input class="preface__checkbox" type="checkbox" name="" value=""/>
+            <div class="preface__heading flex flex--j-space-between">
+              <span class="is-bold">Acknowledgements</span>
+              <div class="preface__arrow">
+                <i class="preface__icon preface__icon--down fas fa-arrow-down"></i>
+                <i class="preface__icon preface__icon--up fas fa-arrow-up"></i>
+              </div>
+            </div>
+            <p class="preface__content">Design and code by Melissa Thomas. Icons by Font Awesome. Deployed by Netlify.</p>
+          </label>
+        </form>
+        <h3 class="h3 nav__subheader">Read in 2021</h3>
+        <!-- The Binding -->
+        <a href="2021/thebinding.html" class="nav__book">
+          <div class="flex">
+            <div class="nav__title flex flex--column">
+              <div class="flex">
+                <span class="is-bold">The Binding</span>
+              </div>
+              <span>Bridget Collins</span>
+            </div>
+          </div>
+          <div class="nav__count">
+            <img src="/img/quote-open-2.png" class="nav__quote" alt="quotation mark icon">
+            <span>3</span>
+          </div>
+          <div class="nav__arrow">
+            <i class="nav__icon fas fa-arrow-right"></i>
+          </div>
+        </a>
+        <!-- Deathless -->
+        <a href="2021/deathless.html" class="nav__book">
+          <div class="flex">
+            <div class="nav__title flex flex--column">
+              <div class="flex">
+                <span class="is-bold">Deathless</span>
+              </div>
+              <span>Catherynne M. Valente</span>
+            </div>
+          </div>
+          <div class="nav__count">
+            <img src="/img/quote-open-3.png" class="nav__quote" alt="quotation mark icon">
+            <span>16</span>
+          </div>
+          <div class="nav__arrow">
+            <i class="nav__icon fas fa-arrow-right"></i>
+          </div>
+        </a>
+        <!-- READ IN 2020 -->
+        <h3 class="h3 nav__subheader">Read in 2020</h3>
+        <!-- What Kind of Woman -->
+        <a href="2020/whatkindofwoman.html" class="nav__book">
+          <div class="flex">
+            <div class="nav__title flex flex--column">
+              <div class="flex">
+                <span class="is-bold">What Kind of Woman</span>
+              </div>
+              <span>Kate Baer</span>
+            </div>
+          </div>
+          <div class="nav__count">
+            <img src="/img/quote-open-1.png" class="nav__quote" alt="quotation mark icon">
+            <span>18</span>
+          </div>
+          <div class="nav__arrow">
+            <i class="nav__icon fas fa-arrow-right"></i>
+          </div>
+        </a>
+        <!-- The Invisible Life of Addie LaRue -->
+        <a href="2020/theinvisiblelifeofaddielarue.html" class="nav__book">
+          <div class="flex">
+            <div class="nav__title flex flex--column">
+              <div class="flex">
+                <span class="is-bold">The Invisible Life of Addie LaRue</span>
+              </div>
+              <span>V.E. Schwab</span>
+            </div>
+          </div>
+          <div class="nav__count">
+            <img src="/img/quote-open-2.png" class="nav__quote" alt="quotation mark icon">
+            <span>15</span>
+          </div>
+          <div class="nav__arrow">
+            <i class="nav__icon fas fa-arrow-right"></i>
+          </div>
+        </a>
+        <!-- The Song of Achilles -->
+        <a href="2020/thesongofachilles.html" class="nav__book">
+          <div class="flex">
+            <div class="nav__title flex flex--column">
+              <div class="flex">
+                <span class="is-bold">The Song of Achilles</span>
+              </div>
+              <span>Madeline Miller</span>
+            </div>
+          </div>
+          <div class="nav__count">
+            <img src="/img/quote-open-3.png" class="nav__quote" alt="quotation mark icon">
+            <span>15</span>
+          </div>
+          <div class="nav__arrow">
+            <i class="nav__icon fas fa-arrow-right"></i>
+          </div>
+        </a>
+        <!-- My Dark Vanessa -->
+        <a href="2020/mydarkvanessa.html" class="nav__book">
+          <div class="flex">
+            <div class="nav__title flex flex--column">
+              <div class="flex">
+                <span class="is-bold">My Dark Vanessa</span>
+              </div>
+              <span>Kate Elizabeth Russell</span>
+            </div>
+          </div>
+          <div class="nav__count">
+            <img src="/img/quote-open-1.png" class="nav__quote" alt="quotation mark icon">
+            <span>2</span>
+          </div>
+          <div class="nav__arrow">
+            <i class="nav__icon fas fa-arrow-right"></i>
+          </div>
+        </a>
+      </nav>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.has-dark-background {
+  background-color: $dark-neutral;
+  color: $light-neutral;
+}
+
+.has-light-background {
+  background-color: $light-neutral;
+  color: $dark-neutral;
+}
+
+.has-solid-border {
+  border-bottom: 1px solid $dark-neutral;
+}
+
+.has-dashed-border {
+  border-bottom: 1px dashed $dark-neutral;
+}
+
+.is-bold {
+  font-weight: $bold-font-weight;
+}

@@ -1,0 +1,65 @@
+.nav {
+  padding-bottom: 5em;
+
+  .nav__subheader {
+    margin: 2em .5em auto .5em;
+  }
+
+  .nav__book {
+    align-items: center;
+    border-bottom: 1px dashed $dark-neutral;
+    color: $dark-neutral;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25em .5em 1em .5em;
+    position: relative;
+    transition: all .25s ease;
+  }
+
+  // quote count container
+  .nav__count {
+    align-content: center;
+    display: flex;
+  }
+
+  // quote image
+  .nav__quote {
+    margin-right: 5px;
+    width: 28px;
+  }
+
+  .nav__arrow {
+    position: absolute;
+    right: -1em;
+    visibility: hidden;
+    transition: all .1s ease;
+  }
+}
+
+// book hover state
+
+.nav .nav__book:hover {
+  background-color: $yellow;
+  padding: 1.25em 2em 1em 1em;
+}
+
+.nav .nav__book:hover .nav__arrow {
+  right: -1.5em;
+  visibility: visible;
+}
+
+// SMALL SCREENS
+
+@media only screen and (max-width: 900px) {
+
+  .nav {
+
+    .nav__title {
+      margin-right: 1.5em;
+    }
+
+    .nav__book:hover {
+      padding-right: 1em;
+    }
+  }
+}

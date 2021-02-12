@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/img/books.png" sizes="16x16">
+  <script src="https://kit.fontawesome.com/fe5fe323b2.js" crossorigin="anonymous"></script>
+  <title>Quote Vault - The Binding</title>
+</head>
+<body>
+  <div class="spread flex">
+    <!-- left half -->
+    <div class="spread__half spread__half--static has-dark-background">
+      <!-- mobile crumb -->
+      <div class="crumb crumb--mobile">
+        <a href="/" aria-label="home" class="crumb__logo">
+          <img src="/img/quotevault-horiz.png" class="crumb__img crumb__img--s">
+          <img src="/img/quotevault.png" class="crumb__img crumb__img--xs">
+        </a>
+        <!-- next / prev -->
+        <div class="crumb__nav">
+          <a href="/2021/deathless.html" class="crumb__arrow">
+            <div class="crumb__next">
+              <span>Next Book</span>
+              <i class="crumb__icon fas fa-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- book info -->
+      <div class="book">
+        <img src="/img/2021/thebinding.jpg" class="book__cover">
+        <div class="book__data">
+          <h2 class="book__title">The Binding</h2>
+          <h3 class="book__author">Bridget Collins</h3>
+          <p class="book__meta">Published January 10, 2019 by The Borough Press </p>
+        </div>
+      </div>
+    </div>
+    <!-- right half -->
+    <main class="spread__half spread__half--scroll spread__half--smooth has-light-background">
+      <nav class="crumb">
+        <a href="/index.html" class="crumb__logo">
+          <img src="/img/quotevault.png" class="crumb__img">
+        </a>
+        <!-- next / prev -->
+        <div class="crumb__nav">
+          <a href="/2021/deathless.html" class="crumb__arrow">
+            <div class="crumb__next">
+              <span>Next Book</span>
+              <i class="crumb__icon fas fa-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+      </nav>
+      <!-- quote -->
+      <div class="quote">
+        <div class="quote__content">Here the clock in the hall dredged up seconds like stones and dropped them again into the pool of the day, letting each ripple widen before the next one fell.</div>
+        <div class="quote__counter"> of 3</div>
+        <div class="tooltip quote__scroll quote__tooltip" data-tooltip="Scroll down">
+          <img class="quote__scrollimg" src="/img/scroll.svg" alt="Scroll down">
+        </div>
+      </div>
+      <!-- quote -->
+      <div class="quote">
+        <div class="quote__content">May your darkness be quiet and the light come sooner than you need.</div>
+        <div class="quote__counter"> of 3</div>
+        <div class="tooltip quote__scroll quote__tooltip" data-tooltip="Scroll down">
+          <img class="quote__scrollimg" src="/img/scroll.svg" alt="Scroll down">
+        </div>
+      </div>
+      <!-- quote -->
+      <div class="quote">
+        <div class="quote__content">Somehow it went from too soon to too late, without the right moment in between.</div>
+        <div class="quote__counter quote__counter--last"> of 3</div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

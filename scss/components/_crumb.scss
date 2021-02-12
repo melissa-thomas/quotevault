@@ -1,0 +1,135 @@
+.crumb {
+  align-items: center;
+  background-color: $light-neutral;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0;
+  position: absolute;
+  top: 0;
+  width: 43%;
+  z-index: 1;
+
+  &.crumb--mobile {
+    display: none;
+  }
+
+  .crumb__logo {
+    display: flex;
+    margin-top: .5em;
+  }
+
+  .crumb__img {
+    max-height: 80px;
+
+    .crumb__img--xs {
+      // very small mobile version
+      display: none;
+    }
+  }
+}
+
+// prev / next
+
+.crumb .crumb__nav {
+  display: flex;
+  font-weight: $bold-font-weight;
+  font-size: $s2-font-size;
+  margin-right: 1em;
+  text-transform: uppercase;
+
+  .crumb__prev,
+  .crumb__next {
+    align-items: center;
+    border-bottom: 1px dashed $dark-neutral;
+    border-top: 1px dashed $dark-neutral;
+    color: $dark-neutral;
+    display: flex;
+    justify-content: center;
+    padding: .25em .75em;
+    position: relative;
+    transition: all .25s ease;
+  }
+
+  .crumb__prev {
+    padding-left: 2em;
+  }
+
+  .crumb__next {
+    margin-left: 1em;
+    padding-right: 2em;
+  }
+
+  .crumb__icon {
+    font-size: 11px;
+    position: absolute;
+    margin-top: 2px;
+    transition: all .25s ease;
+  }
+
+  .crumb__prev:hover,
+  .crumb__next:hover {
+    background-color: $yellow;
+  }
+
+  .crumb__prev .crumb__icon {
+    left: .75em;
+  }
+
+  .crumb__next .crumb__icon {
+    right: .75em;
+  }
+
+  .crumb__prev:hover .crumb__icon {
+    left: .25em;
+  }
+
+  .crumb__next:hover .crumb__icon {
+    right: .25em;
+  }
+}
+
+// SMALL SCREENS
+
+@media only screen and (max-width: 900px) {
+
+  .crumb {
+    display: none;
+
+    &.crumb--mobile {
+      background-color: $light-neutral;
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      padding: .5em 0 1em 1em;
+      position: fixed;
+      top: 0;
+      width: 100vw;
+    }
+
+    .crumb__img {
+      max-width: 170px;
+    }
+
+    .crumb__nav {
+      font-size: $s3-font-size;
+      margin-right: 4em;
+    }
+  }
+}
+
+// VERY SMALL SCREENS
+
+@media only screen and (max-width: 600px) {
+
+  .crumb__img {
+
+    &.crumb__img--s {
+      display: none;
+    }
+
+    &.crumb__img--xs {
+      display: block;
+      max-width: 90px;
+    }
+  }
+}
