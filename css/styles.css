@@ -315,8 +315,7 @@ main {
   flex-direction: column;
   justify-content: center;
   position: relative;
-  scroll-snap-align: center;
-  scroll-snap-stop: always; }
+  scroll-snap-align: center; }
   .quote .quote__img {
     width: 40px; }
   .quote .quote__content {
