@@ -239,7 +239,8 @@ body {
     display: flex; }
   .nav .nav__quote {
     margin-right: 5px;
-    width: 28px; }
+    height: 35px;
+    width: auto; }
   .nav .nav__arrow {
     position: absolute;
     right: -1em;
