@@ -107,29 +107,20 @@
     }
 
     .crumb__img {
-      max-width: 170px;
+
+      &.crumb__img--s {
+        display: none;
+      }
+
+      &.crumb__img--xs {
+        display: block;
+        max-width: 90px;
+      }
     }
 
     .crumb__nav {
       font-size: $s3-font-size;
       margin-right: 4em;
-    }
-  }
-}
-
-// VERY SMALL SCREENS
-
-@media only screen and (max-width: 600px) {
-
-  .crumb__img {
-
-    &.crumb__img--s {
-      display: none;
-    }
-
-    &.crumb__img--xs {
-      display: block;
-      max-width: 90px;
     }
   }
 }

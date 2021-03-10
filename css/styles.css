@@ -173,18 +173,14 @@ body {
       position: fixed;
       top: 0;
       width: 100vw; }
-    .crumb .crumb__img {
-      max-width: 170px; }
+    .crumb .crumb__img.crumb__img--s {
+      display: none; }
+    .crumb .crumb__img.crumb__img--xs {
+      display: block;
+      max-width: 90px; }
     .crumb .crumb__nav {
       font-size: 11px;
       margin-right: 4em; } }
-
-@media only screen and (max-width: 600px) {
-  .crumb__img.crumb__img--s {
-    display: none; }
-  .crumb__img.crumb__img--xs {
-    display: block;
-    max-width: 90px; } }
 
 .preface {
   transition: all .25s ease-in; }
